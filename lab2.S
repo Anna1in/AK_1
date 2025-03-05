@@ -5,11 +5,12 @@
 #define C #3
 
 lab2:
-    push {lr}            @ Зберігаємо значення повернення
 
-    mov r0, A           @ Ініціалізація a = 4
-    mov r1, B           @ Ініціалізація b = 6
-    mov r2, C           @ Ініціалізація c = 3
+    push {lr}       
+// Ініціалізація a,b,c
+    mov r0, A          
+    mov r1, B           
+    mov r2, C          
 
     add r3, r0, r1      @ r3 = a + b
     asr r3, r3, #1      @ r3 = (a + b) / 2
